@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Изменить ответ?</title>
+</head>
+<body>
+
+<h2>Вы уже голосовали, хватит.</h2>
+<img src="{{ url_for('static', filename='evil-hehe.gif') }}" style="width: 128px">
+<br>
+<form action="/pepegas" method="post">
+    <input type="submit" value="Изменить ответ">
+</form>
+</body>
+</html>

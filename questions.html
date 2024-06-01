@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Разрешите обратиться</title>
+</head>
+<body>
+<h1>hehe?</h1>
+<img src="{{ url_for('static', filename='not-hehe-cat.gif') }}" style="width: 128px">
+<br>
+<form action="/results" method="post">
+<fieldset>
+    <legend>Посмотрим</legend>
+    <br>
+    <input type="radio" id ="hehe-1" name="hehe" value="hehe x1" checked>
+    <label for="hehe-1">yes.</label>
+    <br>
+    <input type="radio" id ="hehe-2" name="hehe" value="no">
+    <label for="hehe-2">no.</label>
+    <br>
+    <input type="radio" id ="hehe-3" name="hehe" value="hehe?">
+    <label for="hehe-3">?</label>
+    <br>
+    <input type="radio" id ="hehe-4" name="hehe" value="hehe x2">
+    <label for="hehe-4">double hehe.</label>
+    <br>
+    <input type="radio" id ="hehe-5" name="hehe" value="hehe x3">
+    <label for="hehe-5">triple hehe.</label>
+</fieldset>
+    <br>
+<br>
+<input type="submit" value="отправить">
+</form>
+</body>
+</html>
